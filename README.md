@@ -24,6 +24,4 @@ you need to chat first by opening bot chat and sending "/start", enough to unloc
 
 Edit /etc/rc.local and past **$ python bott.py [&]** before **exit** for run the boot on startup.
 
--
-
 The bot is configured to reply only to your userid for security reasons, ever use spaces to indentate or you'll get execution errors, use tabs instead.
