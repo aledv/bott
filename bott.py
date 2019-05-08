@@ -11,7 +11,7 @@ def on_chat_message(msg):
 		return
 
     first_name = msg["from"]["first_name"]
-	last_name = msg["from"]["last_name"]
+    last_name = msg["from"]["last_name"]
     name = first_name.lstrip() + ' ' + last_name.lstrip()
 
     if content_type == 'text':
