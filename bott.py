@@ -29,11 +29,11 @@ def on_chat_message(msg):
 	autor = msg['audio']['performer']
 	title = msg['audio']['title']
 	file_id = msg['audio']['file_id']
-	name = autor.lstrip() +' - '+ title.lstrip() + '.mp3'
+	file_name = autor.lstrip() +' - '+ title.lstrip() + '.mp3'
 
-	if name != None:
+	if file_name != None:
 		bot.download_file(file_id,config.savePath+name)
-		bot.sendMessage(chat_id, 'Hi %s, %s saved!'%(sender_name,name))
+		bot.sendMessage(chat_id, 'Hi %s, %s saved!'%(name,file_name))
 		return
 
 bot = telepot.Bot(config.token)
