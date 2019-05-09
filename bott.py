@@ -32,7 +32,7 @@ def on_chat_message(msg):
 	file_name = autor.lstrip() +' - '+ title.lstrip() + '.mp3'
 
 	if file_name != None:
-		bot.download_file(file_id,config.savePath+name)
+		bot.download_file(file_id,config.savePath+file_name)
 		bot.sendMessage(chat_id, 'Hi %s, %s saved!'%(name,file_name))
 		return
 
